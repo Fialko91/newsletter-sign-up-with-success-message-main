@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.scss">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="index.js"></script>
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="wrap">
+      <div class="block-content">
+        <div class="block-content__info">
+          <h1 class="description-name">Stay updated!</h1>
+          <p class="description-subtext">Join 60,000+ product managers receiving monthly updates on:</p>
+
+          <ul class="description-list">
+            <li class="description-list__item">Product discovery and building what matters</li>
+            <li class="description-list__item">Measuring to ensure updates are a success</li>
+            <li class="description-list__item">And much more!</li>
+          </ul>
+
+          <form novalidate class="form no-empty valid-email">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" id="email" placeholder="email@company.com" class="form-input" enterkeyhint="send">
+            <div class="error-message">
+              <p class="empty">The field must not be empty</p>
+              <p class="wrong-email">Wrong email format</p>
+            </div>
+
+            <button class="form-btn">Subscribe to monthly newsletter</button>
+
+          </form>
+
+        </div>
+        <div class="block-content__image"></div>
+      </div>
+    </div>
+
+    <div class="popup">
+      <img src="assets/images/icon-success.svg" alt="success" class="popup-img">
+      <h2 class="popup-title">Thanks for subscribing!</h2>
+      <p class="popup-description">
+        A confirmation email has been sent to
+        <a type="email" href="mailto:ash@loremcompany.com">ash@loremcompany.com.</a>
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <button class="popup-close">Dismiss message</button>
+
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </div>
+  
+
+</body>
+</html>
